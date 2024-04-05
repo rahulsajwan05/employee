@@ -1,0 +1,13 @@
+.imageSize{
+    width: 290px;
+}
+
+.inputField{
+    margin-bottom: 1rem;
+}
+
+.selllerRow{
+    min-height: calc(100vh);
+     /* height: 86vh;
+    max-height: 100vh; */
+}

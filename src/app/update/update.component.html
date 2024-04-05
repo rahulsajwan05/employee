@@ -1,0 +1,61 @@
+<app-header></app-header>
+<div class="backColor">
+<div class="backColor">
+    <div class="container ">
+        <div class="row d-flex align-items-center justify-content-center selllerRow">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h5 class="signUpHeading">Add Employee</h5>
+                        <form #updateEmpl="ngForm" (ngSubmit)="update(updateEmpl.value)">
+                            <h6 class="signUpHeading">{{Message}}</h6>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="number" class="form-control" id="code" aria-describedby="code" name="code"
+                                ngModel="{{empData?.code}}" placeholder="Enter Code" disabled="">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="exampleInputEmail1">Email address</label> -->
+                                <input type="text" class="form-control" id="name" aria-describedby="name" name="name"
+                                ngModel="{{empData?.name}}" placeholder="Enter Name">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="exampleInputPassword1">Password</label> -->
+                                <input type="text" class="form-control" id="address" placeholder="Enter address"
+                                    name="address" ngModel="{{empData?.address}}">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="exampleInputPassword1">Password</label> -->
+                                <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile Number"
+                                    name="mobile" ngModel="{{empData?.mobile}}">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="exampleInputPassword1">Password</label> -->
+                                <input type="date" class="form-control" id="dob" placeholder="Enter DOB" name="dob"
+                                ngModel="{{empData?.dob}}">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="exampleInputPassword1">Password</label> -->
+                                <input type="text" class="form-control" id="remarks" placeholder="Enter Remarks"
+                                    name="remarks" ngModel="{{empData?.remarks}}">
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>

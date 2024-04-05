@@ -1,0 +1,19 @@
+<nav class="nav">
+    <h3><a routerLink="/">HRPortal</a></h3>
+    <div class="nav-search">
+      <input #searchInput type="text" (keyup)="search($event)" (blur)="hiddenSearch()"/>
+      <!-- <button (click)="submit(searchInput.value)">Search</button> -->
+      <ul class="ulSearchList" style="width: 62%;background-color: beige;">
+        <li *ngFor="let searchItems of searchedEmp">
+          <a (mousedown)="redirectToDetail(searchItems.id)">{{searchItems.name}} -- {{searchItems.code}}</a>
+        </li>
+      </ul>
+    </div>
+    <div >
+      <div>
+        <ul >
+          <li><a (click)="logout()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

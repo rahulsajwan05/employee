@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "email": "rahul@seller.com",
+      "password": "rahul@123",
+      "id": 1
+    },
+    {
+      "email": "onkar@seller.com",
+      "password": "rahul@123",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Steve",
+      "address": "updated",
+      "mobile": "9779590290",
+      "dob": "2024-04-01",
+      "remarks": "updated",
+      "id": 1,
+      "code": "101"
+    },
+    {
+      "name": "John",
+      "address": "Test 2",
+      "mobile": "9779590290",
+      "dob": "2024-04-01",
+      "remarks": "Test 2",
+      "id": 2,
+      "code": "102"
+    },
+    {
+      "name": "Smith",
+      "address": "Test 3",
+      "mobile": "9779590290",
+      "dob": "2024-03-06",
+      "remarks": "Test 3",
+      "id": 3,
+      "code": "103"
+    },
+    {
+      "name": "Raj",
+      "address": "Test 5",
+      "mobile": "9779590290",
+      "dob": "2024-04-01",
+      "remarks": "Test 5",
+      "id": 5,
+      "code": "105"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+<div class="backColor">
+    <div class="container ">
+        <div class="row d-flex align-items-center justify-content-center selllerRow">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h5 class="signUpHeading">Add Employee</h5>
+                        <form #addEmpl="ngForm" (ngSubmit)="addEmp(addEmpl.value)">
+                            <h6 class="signUpHeading">{{addProductSuccessfully}}</h6>
+                            <div>
+                                <label for="code">Code:</label>
+                                <br>
+                                <input type="email" id="code" name="code" required [(ngModel)]="empData.code" class="w-100">
+                                <div *ngIf="addEmpl.controls['code']?.invalid && addEmpl.controls['code']?.touched">
+                                  <div *ngIf="addEmpl.controls['code'].errors?.['required']">Code is required.</div>
+
+                                </div>
+                              </div>
+                            
+                              <div>
+                                <label for="name">Name:</label>
+                                <br>
+                                <input type="text" id="name" name="name" required [(ngModel)]="empData.name" class="w-100">
+                                <div *ngIf="addEmpl.controls['name']?.invalid && addEmpl.controls['name']?.touched">
+                                  <div *ngIf="addEmpl.controls['name'].errors?.['required']">Name is required.</div>
+                                </div>
+                              </div>
+
+                            <div>
+                                <label for="address">Address:</label>
+                                <br>
+                                <input type="text" id="address" name="address" required [(ngModel)]="empData.address" class="w-100">
+                                <div *ngIf="addEmpl.controls['address']?.invalid && addEmpl.controls['address']?.touched">
+                                  <div *ngIf="addEmpl.controls['address'].errors?.['required']">Address is required.</div>
+                                </div>
+                              </div>
+                            
+                              <div>
+                                <label for="mobile">Mobile:</label>
+                                <br>
+                                <input type="text" id="mobile" name="mobile" required minlength="10" maxlength="10" [(ngModel)]="empData.mobile" class="w-100">
+                                <div *ngIf="addEmpl.controls['mobile']?.invalid && addEmpl.controls['mobile']?.touched">
+                                  <div *ngIf="addEmpl.controls['mobile'].errors?.['required']">Mobile is required.</div>
+                                  
+                                </div>
+                              </div>
+
+                              <div>
+                                <label for="dob">Date OF Birth:</label>
+                                <br>
+                                <input type="date" id="dob" name="dob" required [(ngModel)]="empData.dob" class="w-100">
+                                <div *ngIf="addEmpl.controls['dob']?.invalid && addEmpl.controls['dob']?.touched">
+                                  <div *ngIf="addEmpl.controls['dob'].errors?.['required']">DOB is required.</div>
+                                 
+                                </div>
+                              </div>
+
+                              <div>
+                                <label for="remarks">Remarks:</label>
+                                <br>
+                                <input type="text" id="remarks" name="remarks" required [(ngModel)]="empData.remarks" class="w-100">
+                                <div *ngIf="addEmpl.controls['remarks']?.invalid && addEmpl.controls['remarks']?.touched">
+                                  <div *ngIf="addEmpl.controls['remarks'].errors?.['required']">Remarks is required.</div>
+                                  
+                                </div>
+                              </div>
+
+                            <div class="col-md-12 text-center mt-3">
+                                <button type="submit" class="btn btn-success" [disabled]="addEmpl.invalid" >Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
